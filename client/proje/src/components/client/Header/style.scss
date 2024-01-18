@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.active {
+  color: #ffc515 !important;
+}
+a {
+  text-decoration: none;
+}
+.header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  & .header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    & .name {
+      & h4 {
+        font-size: 36px;
+        font-family: "Helvetica Neue LT Pro", sans-serif;
+        font-size: 36px;
+        color: #fff;
+        & span {
+          color: #ffc515;
+        }
+      }
+    }
+    & .header-links {
+      display: flex;
+      align-items: center;
+      padding: 30px;
+      gap: 30px;
+      border-left: 1px solid rgba(255, 255, 255, 0.5);
+      border-right: 1px solid rgba(255, 255, 255, 0.5);
+
+      & a {
+        color: #fff;
+        font-family: "Helvetica Neue LT Pro", sans-serif;
+        font-size: 16px;
+      }
+    }
+    & .reservation {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      & p {
+        font-family: "Helvetica Neue LT Pro", sans-serif;
+        font-size: 16px;
+      }
+      & .res-phone {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        & span,
+        & i {
+          color: #fff;
+        }
+      }
+      & p {
+        font-weight: 500;
+        color: #ffc515;
+      }
+    }
+  }
+}
